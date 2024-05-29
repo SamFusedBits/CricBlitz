@@ -1,2 +1,21 @@
-<h1>Tailwind with Angular</h1>
-<button class=" bg-purple-400 rounded">Hello</button>
+<header class="bg-blue-900 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Brand -->
+        <div class="text-2xl font-bold">
+            <a href="#" class="hover:text-yellow-400">CricBlitz</a>
+        </div>
+        <!-- Menu -->
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a [routerLink]="'/home'" href="#" class="hover:text-yellow-400">Home</a></li>
+                <li><a [routerLink]="'/live'" href="#" class="hover:text-yellow-400">Live Matches</a></li>
+                <li><a [routerLink]="'/history'" href="#" class="hover:text-yellow-400">History</a></li>
+                <li><a [routerLink]="'/point-table'" href="#" class="hover:text-yellow-400">Point Table</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </div>
+</header>
+<div class="container mx-auto px-18">
+    <router-outlet></router-outlet>
+</div>
