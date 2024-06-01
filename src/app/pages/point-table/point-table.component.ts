@@ -20,9 +20,9 @@ export class PointTableComponent implements OnInit {
       this._api.getPointTable().subscribe({
         next:data=>{
           this.pointTable=data;
-          console.log(this.pointTable)
+          //console.log(this.pointTable)
           this.tableHeading=[this.pointTable[0]]
-          console.log(this.tableHeading)
+          //console.log(this.tableHeading)
         },
         error:error=>{
           console.log(error)

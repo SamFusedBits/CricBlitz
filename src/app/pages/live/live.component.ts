@@ -32,4 +32,7 @@ export class LiveComponent implements OnInit {
       }
     });
   }
-}
+    refreshPage() {
+      window.location.reload();
+    }
+  }

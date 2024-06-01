@@ -1,21 +1,21 @@
 @if (match) {
-    <div class="bg-white transition-all hover:bg-blue-500 hover:text-white hover:border-b-orange-300 card h-full shadow border rounded-xl border-b-8 border-b-blue-400 cursor-pointer p-3 space-y-2">
+    <div class="bg-blue-100 transition-all hover:bg-yellow-400 hover:text-white hover:border-b-blue-900 card h-full shadow-lg border rounded-xl border-b-8 border-b-blue-400 cursor-pointer p-4 space-y-4">
        
-        <div class="py-3  border-b-2">
-            <h1 class="font-bold">{{match.teamHeading }}</h1>
-            <p class="font-light">{{match.matchNumberVenue}}</p>
+        <div class="py-3 border-b-2 border-blue-200">
+            <h1 class="font-bold text-xl text-blue-700">{{match.teamHeading }}</h1>
+            <p class="font-light text-gray-600">{{match.matchNumberVenue}}</p>
         </div>
         <div class="flex justify-between">
-         <h1 class="font-bold text-gray-600">{{match.battingTeam}}</h1>
-         <h1 class="font-bold">{{match.battingTeamScore}}</h1>
+         <h1 class="font-bold text-gray-600 text-lg">{{match.battingTeam}}</h1>
+         <h1 class="font-bold text-blue-600 text-lg">{{match.battingTeamScore}}</h1>
         </div>
         <div class="flex justify-between">
-         <h1 class="font-bold text-gray-600">{{match.bowlTeam}}</h1>
-         <h1 class="font-bold">{{match.bowlTeamScore}}</h1>
+         <h1 class="font-bold text-gray-600 text-lg">{{match.bowlTeam}}</h1>
+         <h1 class="font-bold text-blue-600 text-lg">{{match.bowlTeamScore}}</h1>
         </div>
         <div >
-         <p class="text-red-500">{{match.liveText}}</p>
-         <p class="text-green-800">{{match.textComplete}}</p>
+         <p class="text-red-500 font-semibold">{{match.liveText}}</p>
+         <p class="text-blue-800 font-semibold">{{match.textComplete}}</p>
         </div>
      </div>
 }
