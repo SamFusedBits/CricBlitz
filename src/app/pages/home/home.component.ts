@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -21,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   getNews(): void {
-    const apiKey = 'API_KEY'; // Replace with the NewsAPI key from https://newsapi.org/docs/authentication
+    const apiKey = '87c5d120ae02459fb660f9188bceb3fc'; // Replace with the NewsAPI key from https://newsapi.org/docs/authentication
     //const country = 'in'; // Specify the country parameter 
     const query = 'cricket'; // Specify the query parameter for cricket news
     const apiUrl = `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${apiKey}`;
