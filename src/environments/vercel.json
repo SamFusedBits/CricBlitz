@@ -1,5 +1,5 @@
 {
     "rewrites": [
-      { "source": "/api/(.*)", "destination": "https://cricblitzbackend-production.up.railway.app/match/point-table" }
+      { "source": "/api/(.*)", "destination": "https://cricblitzbackend-production.up.railway.app" }
     ]
   }
