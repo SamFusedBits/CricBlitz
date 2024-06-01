@@ -3,10 +3,12 @@
     color: white;
     padding: 4px 4px;
     border: none;
+    border-radius: 50%;
     border-radius: 5px;
     float: right;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 10px 10px 0 0;
 }
 
 .refresh-button:hover {
