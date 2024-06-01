@@ -1,4 +1,4 @@
 export const environment = {
-    apiUrl: 'http://localhost:8081',
+    apiUrl: 'https://cricblitzbackend-production.up.railway.app',
     apiKey: '87c5d120ae02459fb660f9188bceb3fc'
 };
