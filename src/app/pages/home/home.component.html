@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div *ngIf="newsData">
+    <h1 class="text-gray-600 font-extrabold text-4xl text-center">Cricket Live: Scores, News, and Updates</h1>
+    <br/>
+    <div class="card-container">
+      <div *ngFor="let article of newsData.articles" class="article-card bg-blue-100 transition-all hover:bg-yellow-400 hover:text-white hover:border-b-blue-900 shadow-lg border rounded-xl border-b-8 border-b-blue-400 cursor-pointer">
+        <div class="article-content p-4">
+          <h3 class="font-bold text-xl text-blue-700">{{ article.title }}</h3>
+          <p class="font-light text-gray-600">{{ article.publishedAt }}</p>
+          <div *ngIf="article.urlToImage" class="article-image">
+            <img [src]="article.urlToImage" alt="Article Image">
+          </div>
+          <p>{{ article.description }}</p>
+          <a [href]="article.url" target="_blank" class="text-blue-800 font-semibold">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
