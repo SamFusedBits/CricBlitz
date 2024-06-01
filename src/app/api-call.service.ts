@@ -10,14 +10,14 @@ export class ApiCallService {
   constructor(private _httpClient:HttpClient) { }
 
   getAllMatches(){
-    return this._httpClient.get(`${environment.apiUrl}/match`)
+    return this._httpClient.get(`${process.env['apiUrl']}/match`)
   }
 
   getLiveMatches(){
-    return this._httpClient.get(`${environment.apiUrl}/match/live`)
+    return this._httpClient.get(`${process.env['apiUrl']}/match/live`)
   }
 
   getPointTable(){
-    return this._httpClient.get(`${environment.apiUrl}/match/point-table`)
+    return this._httpClient.get(`${process.env['apiUrl']}/match/point-table`)
   }
 }
