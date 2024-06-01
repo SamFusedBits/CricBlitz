@@ -1,13 +1,24 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
   }
   
   .article-card {
-    flex: 1 1 calc(25% - 20px); /* Adjust card width for responsiveness */
+    flex: 1 1 calc(20% - 25px); /* Adjust card width for responsiveness */
     max-width: calc(25% - 20px); /* Maximum width for 4 cards per row */
     cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+
+  .article-card:nth-of-type(4n+1) {
+    margin-left: 1%; /* Set distance from the left margin for the first card */
+    margin-right: 0.5%;
+  }
+
+  .article-card:nth-of-type(4n) {
+    margin-right: 1%; /* Set distance from the right margin for the last card */
+    margin-left: 0.5%; /* Set distance from the left margin for the first card */
   }
   
   .article-content {
