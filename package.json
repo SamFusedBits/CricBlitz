@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:CricBlitzFrontend": "node dist/cric-blitz-frontend/server/server.mjs",
-    "postinstall": "node set-env.js"
+    "serve:ssr:CricBlitzFrontend": "node dist/cric-blitz-frontend/server/server.mjs"
   },
   "private": true,
   "dependencies": {
