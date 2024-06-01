@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   getNews(): void {
-    const apiKey = environment.apiKey; // Replace with your NewsAPI key from https://newsapi.org/docs/authentication
+    const apiKey = environment.apiKey; // Replace with the NewsAPI key from https://newsapi.org/docs/authentication
     //const country = 'in'; // Specify the country parameter 
     const query = 'cricket'; // Specify the query parameter for cricket news
     const apiUrl = `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${apiKey}`;
