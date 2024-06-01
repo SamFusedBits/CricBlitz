@@ -1,3 +1,3 @@
 export const environment = {
-    apiKey: process.env['apiKey']   
+    apiKey: 'API_KEY'
 };

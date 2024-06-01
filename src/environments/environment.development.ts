@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    apiUrl: process.env['apiUrl'],
-    apiKey: process.env['apiKey']
+    apiUrl: 'API_URL',
+    apiKey: 'API_KEY'
 };
