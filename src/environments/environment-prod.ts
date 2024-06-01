@@ -1,4 +1,7 @@
+require('dotenv').config()
+
 export const environment = {
-    apiUrl: 'https://cricblitzbackend-production.up.railway.app',
-    apiKey: '87c5d120ae02459fb660f9188bceb3fc'
+    production: true,
+    apiUrl: process.env['apiUrl'], //This will send the request to the backendURL, stored as environment variable 
+    apiKey: process.env['apiKey']    //This will get the api key stored as an environment variable
 };

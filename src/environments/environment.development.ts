@@ -1,4 +1,7 @@
+require('dotenv').config()
+
 export const environment = {
-    apiUrl: 'http://localhost:8081',
-    apiKey: '87c5d120ae02459fb660f9188bceb3fc'
+    production: false,
+    apiUrl: process.env['apiUrl'],
+    apiKey: process.env['apiKey']
 };
