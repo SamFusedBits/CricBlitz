@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { environment } from '../../../environments/environment';
@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   newsData: any;
   condition: boolean = true; // Declare the 'condition' property here
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private cdr: ChangeDetectorRef) { }
 
   ngOnInit(): void {
     this.getNews();
@@ -30,6 +30,7 @@ export class HomeComponent implements OnInit {
     this.http.get(apiUrl).subscribe({
       next: (data: any) => {
         this.newsData = data;
+        this.cdr.detectChanges();  // Manually trigger change detection
       },
       error: (error) => {
         console.error('Error fetching news:', error);
