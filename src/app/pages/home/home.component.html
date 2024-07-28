@@ -16,14 +16,22 @@
     </div>
   </div>
   
-  <div *ngIf="!newsData || newsData.articles.length === 0">
-    <h1 class="text-gray-600 font-extrabold text-4xl text-center">
+  <div *ngIf="!newsData || newsData.articles.length === 0" class="container mx-auto p-6">
+    <h1 class="text-gray-600 font-extrabold text-4xl text-center mb-6">
       Cricket Live: Scores, News, and Updates
     </h1>
-    <p class="text-center text-gray-700">
-      Thanks for visiting! Our data resources are temporarily exhausted.
-    </p>
-    <p class="text-center text-gray-700">
-      Please refresh the page to see the last updated cricket news and live scores.
-    </p>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <p class="text-red-700 mb-4">
+        Thanks for visiting! Our data resources are temporarily exhausted.
+      </p>
+      <p class="text-green-700 mb-6">
+        While we get things back in action, watch the video below to see our site in full swing!
+      </p>
+      <div class="video-container mx-auto">
+        <video width="100%" height="auto" controls class="rounded-lg shadow-md">
+          <source src="assets/CricBlitz.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
   </div>
