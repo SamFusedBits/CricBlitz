@@ -16,3 +16,14 @@
     </div>
   </div>
   
+  <div *ngIf="!newsData || newsData.articles.length === 0">
+    <h1 class="text-gray-600 font-extrabold text-4xl text-center">
+      Cricket Live: Scores, News, and Updates
+    </h1>
+    <p class="text-center text-gray-700">
+      Thanks for visiting! Our data resources are temporarily exhausted.
+    </p>
+    <p class="text-center text-gray-700">
+      Please refresh the page to see the last updated cricket news and live scores.
+    </p>
+  </div>
